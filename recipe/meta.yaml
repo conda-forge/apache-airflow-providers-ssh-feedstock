@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-ssh" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://archive.apache.org/dist/airflow/providers/{{ name }}-{{ version }}.tar.gz
-  sha256: d5fb90567ddb9381b454b5a361106c826624c6106050879edcde6607fa2b373e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-ssh-{{ version }}.tar.gz
+  sha256: e3fc7e6fef3f464052a2be2ca8a997f40ffcfc83eab84b900746959dcb0c97f5
 
 build:
   number: 0
@@ -20,7 +20,6 @@ requirements:
     - python >=3.6
     - pip
     - setuptools
-    - wheel
   run:
     - python >=3.6
     - apache-airflow >=2.1.0
