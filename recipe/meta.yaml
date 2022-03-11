@@ -17,15 +17,15 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >=3.7
     - apache-airflow >=2.1.0
     - paramiko >=2.6.0
     - pysftp >=0.2.9
-    - sshtunnel >=0.3.2,<0.5
+    - sshtunnel >=0.3.2
 
 test:
   imports:
