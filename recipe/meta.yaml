@@ -1,7 +1,6 @@
 {% set name = "apache-airflow-providers-ssh" %}
 {% set version = "2.4.3" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,9 +10,9 @@ source:
   sha256: 524510c30b525559a61fe3045ae93db14b23730b5b851bf71b2591d2e7e64ae1
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -38,9 +37,10 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for Secure Shell (SSH) for Apache Airflow
+  summary: Provider for Apache Airflow. Implements apache-airflow-providers-ssh package
   license: Apache-2.0
   license_file: LICENSE
+  license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-ssh/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
