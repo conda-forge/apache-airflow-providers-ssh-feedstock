@@ -23,7 +23,6 @@ requirements:
     - python >=3.7
     - apache-airflow >=2.2.0
     - paramiko >=2.6.0
-    - pysftp >=0.2.9
     - sshtunnel >=0.3.2
 
 test:
