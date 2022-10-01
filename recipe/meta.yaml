@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python >=3.7
-    - pip
     - setuptools
+    - pip
   run:
     - python >=3.7
     - apache-airflow >=2.2.0
