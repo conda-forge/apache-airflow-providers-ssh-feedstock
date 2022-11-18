@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-ssh" %}
-{% set version = "3.2.0" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-ssh-{{ version }}.tar.gz
-  sha256: 361d612a71073e61751f4c62b29b34ec6c076ce225d8f833b7d0ceb0cc6ba13a
+  sha256: eb8ea393b551c5051c6b4717472a95bd2f2c3d5df37934fb178a045f0145da50
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - apache-airflow >=2.2.0
+    - apache-airflow >=2.3.0
     - paramiko >=2.6.0
     - sshtunnel >=0.3.2
 
