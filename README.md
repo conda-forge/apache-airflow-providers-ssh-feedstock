@@ -3,11 +3,11 @@ About apache-airflow-providers-ssh-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apache-airflow-providers-ssh-feedstock/blob/main/LICENSE.txt)
 
-Home: https://airflow.apache.org/
+Home: https://github.com/apache/airflow/
 
 Package license: Apache-2.0
 
-Summary: Provider for Apache Airflow. Implements apache-airflow-providers-ssh package
+Summary: Provider package apache-airflow-providers-ssh for Apache Airflow
 
 Development: https://github.com/apache/airflow/
 
