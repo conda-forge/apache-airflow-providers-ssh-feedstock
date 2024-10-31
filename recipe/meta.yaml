@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-ssh" %}
-{% set version = "3.13.1" %}
+{% set version = "3.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_ssh-{{ version }}.tar.gz
-  sha256: 50d33dcdb55f174f3cd45d8442f68876ed42b483dea4617cedf6841642087123
+  sha256: 905aa2ace17d38e1d2d3f2f0b27ccf7fd769d2a6cec4b9aac24f8d105efd760a
 
 build:
   noarch: python
