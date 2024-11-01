@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_ssh-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_ssh-{{ version }}.tar.gz
   sha256: 905aa2ace17d38e1d2d3f2f0b27ccf7fd769d2a6cec4b9aac24f8d105efd760a
 
 build:
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.dev0
+    - python >=3.9,<4.dev0
     - flit-core >=3.2,<4
     - pip
   run:
-    - python >=3.8,<4.dev0
+    - python >=3.9,<4.dev0
     - apache-airflow >=2.8.0
     - paramiko >=2.9.0
     - sshtunnel >=0.3.2
