@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.10.1
+    - flit-core ==3.11.0
     - pip
   run:
     - python >={{ python_min }},<4.dev0
@@ -38,10 +38,14 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-ssh for Apache Airflow
   license: Apache-2.0
+<<<<<<< HEAD
   license_file: airflow/providers/ssh/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-ssh/stable/index.html
   dev_url: https://github.com/apache/airflow/
+=======
+  license_file: src/airflow/providers/ssh/LICENSE
+>>>>>>> cb90c07 (Update recipe with my grayskull autoupdate script)
 
 extra:
   recipe-maintainers:
