@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-ssh
-  version: 4.3.0
+  version: "4.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -24,13 +24,14 @@ requirements:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.12.0
+    - asyncssh >=2.12.0
     - paramiko >=2.9.0,<4.0.0
     - sshtunnel >=0.3.2
-    - asyncssh >=2.12.0
+
 tests:
   - python:
       imports:
-        - airflow.providers.ssh
+      - airflow.providers.ssh
       pip_check: true
       python_version: ${{ python_min }}.*
 
