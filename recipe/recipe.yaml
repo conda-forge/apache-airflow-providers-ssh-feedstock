@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-ssh
-  version: "4.3.0"
+  version: 4.3.1
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_ssh-${{ version }}.tar.gz
-  sha256: 05a299f3b3ad7fefad1cf8136e665e738715688c5a00db64d3e7dabf0923d438
+  sha256: b06da0bbeda0feb3ce5e3a97894b59f9bb6b02e5a903031ff1e3770cf4c1ae5d
 
 build:
   noarch: python
@@ -27,11 +27,10 @@ requirements:
     - asyncssh >=2.12.0
     - paramiko >=2.9.0,<4.0.0
     - sshtunnel >=0.3.2
-
 tests:
   - python:
       imports:
-      - airflow.providers.ssh
+        - airflow.providers.ssh
       pip_check: true
       python_version: ${{ python_min }}.*
 
