@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-ssh
-  version: "4.3.2"
+  version: "4.3.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_ssh-${{ version }}.tar.gz
-  sha256: 4639f13448f981953fa4fa0e6937ab7e19c4875106fd06d29b30a711e353fcc4
+  sha256: cf44c64dbaa11e9c90db3fd15a938ce24799115bc1ecef71e639fd3101b8fe3f
 
 build:
   noarch: python
