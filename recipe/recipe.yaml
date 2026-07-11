@@ -28,7 +28,7 @@ requirements:
     - paramiko >=3.5.1,<4.0.0
 
     # temporary constraint because of bad dependencies
-    pynacl !=1.6.2
+    - pynacl !=1.6.2
 
 tests:
   - python:
