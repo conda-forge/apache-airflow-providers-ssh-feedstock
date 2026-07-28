@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-ssh
-  version: "5.0.4"
+  version: 6.0.0
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_ssh-${{ version }}.tar.gz
-  sha256: 7cd256bbf0e3424646eddb3ebaa50f13a6ef01648e49643333acb9f330be92df
+  sha256: 524e2660fe88929da5ce7d4b2a8bdf32b719695436aa0a7b7949a0edccb44f5e
 
 build:
   noarch: python
@@ -25,11 +25,7 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.12.0
     - asyncssh >=2.12.0
-    - paramiko >=3.5.1,<4.0.0
-
-    # temporary constraint because of bad dependencies
-    - pynacl !=1.6.2
-
+    - paramiko >=4.0.0,<5.0.0
 tests:
   - python:
       imports:
@@ -37,7 +33,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   homepage: https://github.com/apache/airflow/
