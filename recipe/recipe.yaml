@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-ssh
-  version: "6.1.0"
+  version: "7.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_ssh-${{ version }}.tar.gz
-  sha256: dea6d26f5a4abef401e7bb07ac088184f35610135dbdd7aa5a5b2ce078e37b56
+  sha256: 53b2f654ba507057031579a0789f449b76d955c444531fc19b27630a22b028df
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==4.0.2
+    - flit-core ==4.1.0
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
